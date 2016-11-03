@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Leadinger | Let us lead you to success - fires on every scroll</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="icon" href="favicon.ico">
+</head>
+<body>
+
+	<progress max="1" value="0"></progress>
+
+	<script>
+	/**
+	 * PROGRESS BAR
+	 */
+	var bar = document.querySelector('progress'),
+		max = document.body.scrollHeight - window.innerHeight;
+
+	bar.max = max;
+
+	addEventListener('scroll', function() {
+		bar.value = pageYOffset;
+		fauxAjax();
+	});
+
+	addEventListener('resize', function() {
+		bar.max = document.body.scrollHeight - window.innerHeight;
+	});
+
+
+	// for stats and stuff
+	function fauxAjax()	{
+		var start    = (new Date()).getTime();
+		var stoptime = Math.floor(Math.random() * 10) + 200;
+
+		// this a blocking operation
+		// a real ajax call would not be blocking
+		// but this serves to illustrate a point
+		// about how expensive constantly firing events is
+		while( (new Date()).getTime() - start < stoptime ) {
+			// sleep
+		}
+
+		console.log( 'fired', (new Date()).getTime() );
+	}
+	</script>
+
+</body>
+</html>
