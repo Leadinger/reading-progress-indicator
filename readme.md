@@ -2,8 +2,7 @@
 
 ![Leadinger](http://leadinger.com/themes/leadinger-creative/assets/images/leadinger_logo.svg)
 
-
-Here is source code to our first video tutorial. For further information about this topic check link below. 
+Here is the source code to our first video tutorial. For further information about this topic check the links below.
 
 HTML5 progress element  
 * https://css-tricks.com/html5-progress-element/  
