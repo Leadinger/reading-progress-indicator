@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Leadinger | Let us lead you to success - fires every once in a while</title>
+	<link rel="stylesheet" href="css/style.css">
+        <link rel="icon" href="favicon.ico">
+</head>
+<body>
+
+    <progress max="1" value="0"></progress>
+
+    <script>
+	function displayCoords( event ) {
+            document.body.textContent = 'Mouse at ' + event.pageX + ', ' + event.pageY;
+            console.log( 'fired' );
+	}
+
+	var scheduled = false,
+            lastEvent;
+
+	addEventListener('mousemove', function( event ) {
+            lastEvent = event;
+
+            if ( ! scheduled ) {
+                scheduled = true;
+                setTimeout(function() {
+                        displayCoords( lastEvent );
+                        scheduled = false;
+                }, 250);
+            }
+	});
+    </script>
+
+</body>
+</html>

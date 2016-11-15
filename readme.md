@@ -1,14 +1,25 @@
-**Building a Reading Progress Indicator in JavaScript**  
+**Building a Reading Progress Indicator in JavaScript**
 
 ![Leadinger](http://leadinger.com/themes/leadinger-creative/assets/images/leadinger_logo.svg)
 
 Here is the source code to our first video tutorial. For further information about this topic check the links below.
 
-HTML5 progress element  
-* https://css-tricks.com/html5-progress-element/  
-* http://www.useragentman.com/blog/2012/01/03/cross-browser-html5-progress-bars-in-depth/  
+# Part 1
 
-Reading indicator  
-* https://css-tricks.com/reading-position-indicator/ 
-* https://webdesign.tutsplus.com/tutorials/how-to-build-a-page-scroll-progress-indicator-with-jquery-and-svg--cms-20881  
-* http://digiday.com/publishers/designers-hate-article-progress-bar/  
+HTML5 progress element
+* https://css-tricks.com/html5-progress-element/
+* http://www.useragentman.com/blog/2012/01/03/cross-browser-html5-progress-bars-in-depth/
+
+Reading indicator
+* https://css-tricks.com/reading-position-indicator/
+* https://webdesign.tutsplus.com/tutorials/how-to-build-a-page-scroll-progress-indicator-with-jquery-and-svg--cms-20881
+* http://digiday.cscom/publishers/designers-hate-article-progress-bar/
+
+# Part 2
+
+Throttling explained
+* https://css-tricks.com/debouncing-throttling-explained-examples/
+
+Throttling implementation
+* http://underscorejs.org/docs/underscore.html#section-82
+* https://lodash.com/docs/4.16.2#throttle
