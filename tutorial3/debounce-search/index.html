@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Leadinger | Let us lead you to success - ajax debounced</title>
+	<link rel="stylesheet" href="css/style.css">
+        <link rel="icon" href="favicon.ico">
+</head>
+<body>
+        <span class="hint">Open console and start typing</span>
+	<form action="#">
+		<input type="search">
+	</form>
+
+	<script>
+	var input = document.querySelector('input');
+	var timeout;
+
+
+	/**
+	 * shitty
+	 */
+	/*input.addEventListener('keyup', function() {
+		fauxAjax();
+	});*/
+
+
+	/**
+	 * DEBOUNCED
+	 */
+	input.addEventListener('keyup', function() {
+		clearTimeout(timeout);
+		timeout = setTimeout(function() {
+			fauxAjax();
+		}, 500);
+	});
+
+
+	/**
+	 * we simulate a heavy process
+	 */
+	function fauxAjax() {
+		var start    = (new Date()).getTime();
+		var stoptime = Math.random() * 150 + 100;
+
+		console.log( 'ajax fired' );
+
+		// this a blocking operation
+		// a real ajax call would not be blocking
+		// but this serves to illustrate a point
+		// about how expensive constantly firing events is
+		while( (new Date()).getTime() - start < stoptime ) {
+			// sleep for about 100 - 250ms
+		}
+
+		console.log( (new Date()).getTime(), 'results arrived' );
+	}
+	</script>
+
+</body>
+</html>
+
