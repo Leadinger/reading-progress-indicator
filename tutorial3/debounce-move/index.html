@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Leadinger | Let us lead you to success - fires once i stop</title>
+	<link rel="stylesheet" href="css/style.css">
+        <link rel="icon" href="favicon.ico">
+</head>
+<body>
+
+    <progress max="1" value="0"></progress>
+
+    <script>
+        function displayCoords( event ) {
+            document.body.textContent = 'Mouse at ' + event.pageX + ', ' + event.pageY;
+            console.log( 'fired' );
+        }
+
+        var scheduled = false,
+            debounceTimer;
+
+        addEventListener('mousemove', function( event ) {
+                clearTimeout( debounceTimer );
+                debounceTimer = setTimeout(function() {
+                        displayCoords( event );
+                }, 500);
+
+        });
+    </script>
+
+    <span class="hint">Move cursor</span>
+</body>
+</html>

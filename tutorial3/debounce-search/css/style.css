@@ -1,0 +1,39 @@
+html { box-sizing: border-box; }
+*, *:before, *:after { box-sizing: inherit; }
+
+body {
+    background: url('../img/food.png');
+    padding: .25em 2em;
+}
+
+form {
+    width: 20em;
+    margin: 3.75em auto;
+    list-style: none;
+    padding-left: 0;
+}
+
+input {
+    color: orange;
+    padding: 0.95em;
+    background: #fff;
+    border: none;
+    font-size: 1.1em;
+    border: 3px solid rgba(255, 165, 0, .43);
+    font-family: Futura,"Trebuchet MS",Arial,sans-serif;
+    background-color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: .5em;
+    width: 100%;
+    outline: none;
+}
+
+.hint {
+    position: absolute;
+    bottom: 0.25em;
+    right: 1em;
+    color: #097054;
+    font-size: x-large;
+    font-weight: bold;
+}
