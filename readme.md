@@ -26,13 +26,15 @@ Throttling implementation
 
 # Part 3
 
-JS debouncing explained
+Debouncing explained
 * https://css-tricks.com/debouncing-throttling-explained-examples/
 * https://john-dugan.com/javascript-debounce/
-* http://underscorejs.org/docs/underscore.html 
 * http://stackoverflow.com/questions/24004791/can-someone-explain-the-debounce-function-in-javascript
-* http://benalman.com/projects/jquery-throttle-debounce-plugin/ 
-* https://gist.github.com/makenova/7885923
+* http://benalman.com/projects/jquery-throttle-debounce-plugin/
 
-Done resizing event
+Implementation
+* http://underscorejs.org/docs/underscore.html
+
+Even more links
+* https://gist.github.com/makenova/7885923
 * https://css-tricks.com/snippets/jquery/done-resizing-event/
